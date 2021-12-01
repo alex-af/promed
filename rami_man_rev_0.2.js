@@ -24,8 +24,7 @@ observer = new MutationObserver((mutations) => {
         {
 			console.log(mutation.addedNodes[i]);
 
-			document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Polis_Ser]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.insertBefore(document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Patsient_undefined_Person_Snils]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode,document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Polis_Ser]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
-
+document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Polis_Ser]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.insertBefore(document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Patsient_undefined_Person_Snils]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode,document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Polis_Ser]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
 //console.log(document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Polis_Ser]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
 
 			document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis]').classList.add('x-panel-collapsed');
