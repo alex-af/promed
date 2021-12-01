@@ -51,7 +51,6 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 			
 // stop watching using:
-//
 function stopWatching()
 {
 	observer.disconnect();
