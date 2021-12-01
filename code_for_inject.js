@@ -12,10 +12,14 @@ function loadCat() {
       }
     }
 
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
       caturl = loadCat().file;
-      document.querySelector('.x-tab-panel-body.x-tab-panel-body-top').style.setProperty('background-image','url('+caturl+')');
-      document.querySelector('.x-tab-panel-body.x-tab-panel-body-top').style.setProperty('background-size','cover');
+      background_div =  document.querySelector('.x-tab-panel-body.x-tab-panel-body-top');
+      if (typeof(background_div)!='undefined')
+      {
+            document.querySelector('.x-tab-panel-body.x-tab-panel-body-top').style.setProperty('background-image','url('+caturl+')');
+            document.querySelector('.x-tab-panel-body.x-tab-panel-body-top').style.setProperty('background-size','cover');
+      }
 })
 
 
