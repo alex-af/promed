@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	  , attributes: false
 	  , characterData: false
 	});
-};
+});
 			
 // stop watching using:
 //
