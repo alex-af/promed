@@ -11,6 +11,7 @@ function loadCat() {
         return(JSON.parse(xhr.responseText));
       }
     }
+
 window.addEventListener('load', function () {
       caturl = loadCat().file;
       document.querySelector('.x-tab-panel-body.x-tab-panel-body-top').style.setProperty('background-image','url('+caturl+')');
