@@ -27,8 +27,8 @@ observer = new MutationObserver((mutations) => {
 
 //console.log(document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Polis_Ser]').parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);
 
-			//document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis]').classList.add('x-panel-collapsed');
-			//document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Med_dokumenti]').classList.add('x-panel-collapsed');
+			document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis]').classList.add('x-panel-collapsed');
+			document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Med_dokumenti]').classList.add('x-panel-collapsed');
 
 			Ext.getCmp('swPersonSearchWindow').doLayout();
         }
