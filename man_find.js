@@ -41,14 +41,15 @@ observer = new MutationObserver((mutations) => {
 });
 
 
-
-observer.observe(document.body, {
-    childList: true
-  , subtree: true
-  , attributes: false
-  , characterData: false
-});
-
+window.addEventListener('DOMContentLoaded', function () {
+	observer.observe(document.body, {
+	    childList: true
+	  , subtree: true
+	  , attributes: false
+	  , characterData: false
+	});
+};
+			
 // stop watching using:
 //
 function stopWatching()
