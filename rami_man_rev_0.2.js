@@ -34,8 +34,32 @@ document.querySelector('[test_id=win_swPersonSearchWindow_pnl_Polis_textfield_Po
         }
 
 
+//EVN
+		if (mutation.addedNodes[i].id=='swEvnStickEditWindow')
+        {
+			console.log(mutation.addedNodes[i]);
+swEvnStickEditWindow.menuPrintActions.addMenuItem({
+				text: 'Печать усеченного талона ЭЛН (PDF)',
+				iconCls : 'print16',
+				tooltip: 'Печать усеченного талона ЭЛН',
+				id: 'printTruncatedCouponELNinPDF',
+				hidden: getRegionNick() == 'kz',
+				handler: function(){
+					var base_form = swEvnStickEditWindow.FormPanel.getForm();
+					var EvnStick_id = base_form.findField('EvnStick_id').getValue();
+					var Report_Params = '&paramEvnStick=' + EvnStick_id;
+					printBirt({
+						'Report_FileName': 'ELN_EvnStickPrint_short.rptdesign',
+						'Report_Params': Report_Params,
+						'Report_Format': 'pdf'
+					});
+				}
+			});
 
+			Ext.getCmp('swEvnStickEditWindow').doLayout();
+        }
 
+//end
     }
   });
 });
